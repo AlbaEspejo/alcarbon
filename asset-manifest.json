@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alcarbon/static/css/main.a63b5d35.css",
-    "main.js": "/alcarbon/static/js/main.4bf2c363.js",
+    "main.js": "/alcarbon/static/js/main.f55db5e1.js",
     "static/js/453.2ab26695.chunk.js": "/alcarbon/static/js/453.2ab26695.chunk.js",
     "static/media/IMG_NEWSLETTER.gif": "/alcarbon/static/media/IMG_NEWSLETTER.066b9e8c0f5ac67b9465.gif",
     "static/media/IMG_RESERVAS.png": "/alcarbon/static/media/IMG_RESERVAS.3b7b5b8e542f90847c2b.png",
@@ -10,7 +10,7 @@
     "static/media/IMG_COCINA_2.png": "/alcarbon/static/media/IMG_COCINA_2.f999bc13d28cb9402fab.png",
     "static/media/IMG_RESTAURANTE_JAEN.jpg": "/alcarbon/static/media/IMG_RESTAURANTE_JAEN.a74a5a3c7fcd85cddc32.jpg",
     "static/media/IMG_TORREZNOS.png": "/alcarbon/static/media/IMG_TORREZNOS.7fb456c650b9e93b329b.png",
-    "static/media/IMG_RESTAURANTE_GRANVÍA.png": "/alcarbon/static/media/IMG_RESTAURANTE_GRANVÍA.6013ed40f69d32d1af3c.png",
+    "static/media/IMG_RESTAURANTE_GRANVIA.png": "/alcarbon/static/media/IMG_RESTAURANTE_GRANVIA.6013ed40f69d32d1af3c.png",
     "static/media/IMG_TARJETA_REGALO.png": "/alcarbon/static/media/IMG_TARJETA_REGALO.0f1cc29216020ca03fff.png",
     "static/media/IMG_CROQUETAS.jpg": "/alcarbon/static/media/IMG_CROQUETAS.b52c3fdb82834eedc065.jpg",
     "static/media/IMG_IBERICOS.jpg": "/alcarbon/static/media/IMG_IBERICOS.fa22042b86d296116895.jpg",
@@ -81,11 +81,11 @@
     "static/media/ICON_LOGIN.png": "/alcarbon/static/media/ICON_LOGIN.a3788a0dc036112f5779.png",
     "index.html": "/alcarbon/index.html",
     "main.a63b5d35.css.map": "/alcarbon/static/css/main.a63b5d35.css.map",
-    "main.4bf2c363.js.map": "/alcarbon/static/js/main.4bf2c363.js.map",
+    "main.f55db5e1.js.map": "/alcarbon/static/js/main.f55db5e1.js.map",
     "453.2ab26695.chunk.js.map": "/alcarbon/static/js/453.2ab26695.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a63b5d35.css",
-    "static/js/main.4bf2c363.js"
+    "static/js/main.f55db5e1.js"
   ]
 }
