@@ -1,5 +1,5 @@
 //IMÁGENES ENTRANTES
-// import TEQUEÑOS from "../../MEDIA/IMG_CARTA/ENTRANTES/IMG_TEQUEÑOS.jpg"
+import TEQUEÑOS from "../../MEDIA/IMG_CARTA/ENTRANTES/IMG_TEQUEÑOS.jpg"
 import NACHOS from "../../MEDIA/IMG_CARTA/ENTRANTES/IMG_NACHOS.jpeg"
 import QUESADILLA from "../../MEDIA/IMG_CARTA/ENTRANTES/IMG_QUESADILLA.jpeg"
 import TORREZNOS from "../../MEDIA/IMG_CARTA/ENTRANTES/IMG_TORREZNOS.png"
@@ -63,7 +63,7 @@ const foodData = {
       { id: "01",
         category: "entrantes",
         name: "TEQUEÑOS", 
-        image: NACHOS, 
+        image: TEQUEÑOS, 
         description:"8 Palitos fritos rellenos de queso derretido, acompañados con tu salsa favorita de la casa. ¡Tradición venezolana!" ,
         price: 9.90
       },
