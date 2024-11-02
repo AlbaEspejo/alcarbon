@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alcarbon/static/css/main.a63b5d35.css",
-    "main.js": "/alcarbon/static/js/main.fe7289fc.js",
+    "main.js": "/alcarbon/static/js/main.5a3f616d.js",
     "static/js/453.2ab26695.chunk.js": "/alcarbon/static/js/453.2ab26695.chunk.js",
     "static/media/IMG_NEWSLETTER.gif": "/alcarbon/static/media/IMG_NEWSLETTER.066b9e8c0f5ac67b9465.gif",
     "static/media/IMG_RESERVAS.png": "/alcarbon/static/media/IMG_RESERVAS.3b7b5b8e542f90847c2b.png",
@@ -81,11 +81,11 @@
     "static/media/ICON_LOGIN.png": "/alcarbon/static/media/ICON_LOGIN.a3788a0dc036112f5779.png",
     "index.html": "/alcarbon/index.html",
     "main.a63b5d35.css.map": "/alcarbon/static/css/main.a63b5d35.css.map",
-    "main.fe7289fc.js.map": "/alcarbon/static/js/main.fe7289fc.js.map",
+    "main.5a3f616d.js.map": "/alcarbon/static/js/main.5a3f616d.js.map",
     "453.2ab26695.chunk.js.map": "/alcarbon/static/js/453.2ab26695.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a63b5d35.css",
-    "static/js/main.fe7289fc.js"
+    "static/js/main.5a3f616d.js"
   ]
 }
