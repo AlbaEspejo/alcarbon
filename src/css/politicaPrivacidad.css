@@ -1,0 +1,57 @@
+.div-tabla-privacidad{
+    font-family: "Inter", sans-serif;
+    background-color: #ffffffed;
+    color: #262626;
+    margin: 20px;
+}
+
+.div-tabla-privacidad{
+    max-width: 90%; /* Ancho máximo de la tabla */
+    margin: 100px auto 20px auto; /* Centrar la tabla */
+    padding: 20px; /* Espaciado interior */
+    background-color: rgba(255, 255, 255, 0.882); /* Fondo blanco para la tabla */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.div-tabla-privacidad h3 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+    background-color: #DF861D;
+    padding: 20px;
+}
+
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Eliminar espacios entre celdas */
+}
+
+th, td {
+    padding: 15px; /* Espaciado interior en celdas */
+    border: 1px solid #b0b0b0; /* Borde de las celdas */
+    vertical-align: top; /* Alinear contenido al top */
+}
+
+th {
+    background-color: #DF861D; /* Color de fondo para los encabezados */
+    color: white; /* Color del texto en encabezados */
+}
+
+a {
+    color: #DF861D; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+.additional-info{
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 20px;
+}
+.final-aviso-legal{
+    margin-top: 20px;
+    text-align: center;
+    color: #DF861D;
+}

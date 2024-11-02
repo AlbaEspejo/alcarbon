@@ -1,0 +1,206 @@
+body{
+  overflow: auto;
+}
+.img-principal-carta {
+  filter: brightness(0.7) !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img_intro_carta {
+  position: relative;
+  width: 100vw;
+  height: 450px;
+  overflow: hidden;
+}
+
+.text-centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+.button-pedido-centered {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 2;
+  margin: 0;
+}
+
+
+/* Estilo para el botón centrado */
+   .container {
+    display: flex;
+  }
+  
+  .menu {
+    background-color: rgba(255, 255, 255, 0.051);
+    height: 130vh;
+    padding: 20px 20px 20px 0;
+  }
+  .menu ul{
+    height: 130vh;
+    width: 150px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  
+  .menu ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+  }
+  
+  .menu li {
+    background-color: #DF861D;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0px 0 20px 0;
+    cursor: pointer; 
+    transition: background-color 0.2s;
+    padding: 15px 10px;
+    font-size: 25px;
+  }
+  
+  .menu li:hover {
+    background-color: #934F00;
+  }
+  .menu li img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  .menu ul li.selected {
+    background-color: #934F00;
+    font-weight: bold;
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .food-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    margin: 0px 30px;
+    height: auto;
+  }
+  
+  .card-carta {
+    height: auto;
+    width: calc(20.33% - 15px);
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    margin-top: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  .card-carta:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .card-carta img {
+    width: 100%;
+    min-height: 270px;
+    max-height: 270px;
+    border-radius: 5px; 
+    display: block;
+    object-fit: cover;
+  }
+  .card-carta h3{
+    margin: 10px 0; 
+    text-align: left;
+}
+  
+  .card-carta p{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    flex-grow: 1;
+  }
+  
+/* MEDIA QUERIES  */
+  @media (max-width: 648px) {
+    .card-carta {
+      width: calc(90% - 10px); /* Ajusta el ancho para mostrar 1 tarjeta por fila */
+    }
+  }
+  @media (min-width: 649px) and (max-width: 840px) {
+    .card-carta {
+      width: calc(40% - 10px); /* Ajusta el ancho para mostrar 1 tarjeta por fila */
+    }
+  }
+  @media (min-width: 840px) and (max-width: 1070px) {
+    .card-carta {
+      width: calc(28% - 10px); /* Ajusta el ancho para mostrar 1 tarjeta por fila */
+      margin: 15px; /* Añade margen entre tarjetas */
+    }
+
+  }
+  @media (max-width: 768px) {
+    .text-centered {
+        font-size: 1.5rem;
+    }
+    
+    .button-pedido-centered {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .img_intro_carta{
+      height: 400px;
+      margin-bottom: -90px;
+    }
+    .img-principal-carta{
+      height: 70%;
+    }
+  }
+
+  @media (max-width: 768px) { /* Aplicable en pantallas menores a 768px */
+    .menu {
+      width: 200px; /* Menú más estrecho en móviles */
+      padding: 10px 0px 0px 30px;
+      position: sticky; /* Fija el menú en la pantalla */
+      top: 10%;
+      left: 0;
+      height: 100%; /* Ocupa toda la altura de la pantalla */
+    }
+  
+    /* Ajustes de estilo para los ítems de menú en pantallas pequeñas */
+    .menu ul li {
+      font-size: 1em; /* Texto más pequeño */
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column; /* Coloca texto e ícono en columna */
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .menu ul li img {
+      width: 50px; /* Reduce el tamaño de los íconos */
+    }
+    .food-cards{
+      margin-left: 0px;
+    }
+  }

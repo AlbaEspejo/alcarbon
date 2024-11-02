@@ -1,0 +1,77 @@
+
+
+body{
+    background-image: url("../../MEDIA/IMG/IMG_RESERVAS.png");
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.title-contacto{
+    margin-top: 5%;
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.bg-datos{
+    background-color: rgba(255, 255, 255, 0.809);
+    border-radius: 10px;
+    padding: 10px 30px 30px 30px;
+    margin-top: 42px;
+    color: #262626;
+    margin-left: 50px;
+}
+.datos h4{
+    text-decoration: underline;
+}
+.parrafo-contacto{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.parrafo-contacto span{
+    font-weight: 700;
+}
+.container-contacto{
+    margin-bottom: 40px;
+}
+.btn-contacto{
+    border: 2px solid transparent;
+}
+@media (max-width: 768px){
+    .form-title{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .bg-datos{
+        margin: auto;
+        width: 80%;
+    }
+    .form-label{
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 767px){
+    .no-margin button{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 700px){
+    .title-contacto{
+        font-size: 50px;
+        margin-top: 15%;
+    }
+}

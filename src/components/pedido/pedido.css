@@ -1,0 +1,572 @@
+
+
+/* MENÚ HORIZONTAL */
+.horizontal-menu {
+  display: flex;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100vw;
+  background-color: #DF861D;
+  height: 60px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.menu-list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.menu-list li {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.1s;
+  font-size: 24px; /* Tamaño de fuente ajustado */
+}
+
+/* Efecto hover */
+.menu-list li:hover {
+  color: #804b0f;
+}
+.menu-list li.active {
+  color: #804b0f;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+  /* CARD */
+  .food-menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding-top: 190px;
+  }
+  .title-pedido-carta{
+    font-family: "Grandstander", cursive;
+    font-size: 70px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+  .food-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start;
+    margin-top: 0px;
+}
+.food-category .card-pedido{
+  margin-top: 0px;
+}
+
+
+
+
+.card-pedido {
+    display: flex;
+    border: 2px solid #DF861D;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 420px; /* Aumenta el tamaño máximo si es necesario */
+    height: 150px !important; /* Fija la altura */
+    margin: 20px;
+    color: white;
+    background-color: #2c2c2c;
+    position: relative;
+}
+
+
+.card-image-pedido {
+    width: 150px; /* Fija el ancho de la imagen a la izquierda */
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+}
+
+.card-content-pedido {
+    padding: 5px 5px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido verticalmente */
+    flex: 1; /* Ocupa el espacio restante a la derecha */
+}
+
+.card-title-pedido {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.card-description-pedido {
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    margin: 5px 0;
+    flex-grow: 1; /* Esto permite que la descripción ocupe más espacio si es necesario */
+}
+
+.card-price-pedido {
+  font-family: "Inter", sans-serif;
+    font-size: 20px !important;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-button-pedido {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(182, 6, 6);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px; /* Alinea el botón al fondo */
+    right: 10px;
+}
+
+.card-button-pedido:hover {
+    background-color: rgb(251, 0, 0);
+}
+/* MODAL REGISTRADO */
+.modal-title-registrado{
+  color: #DF861D;
+  font-size: 40px;
+  font-family: "Grandstander", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text-registrado{
+  color: #804b0f;
+  font-size: 30px;
+}
+.btn-registro-exitoso{
+  width: 30%;
+  padding: 0px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.btn-registro-exitoso:hover{
+  color: #DF861D;
+}
+/* MODAL PEDIDO */
+.no-scroll-modal-pedido {
+  overflow: hidden;
+  
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  top: 5%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+.modal-image-pedido{
+  height: 250px;
+}
+.title-card-modal-pedido{
+  margin-top: 5px;
+  color: #262626;
+}
+.accordion-header button{
+  padding-bottom: 5px;
+}
+.accordion-item{
+  border: none;
+  padding-bottom: 0px;
+  background-color: none;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed{
+  border: none;
+}
+.accordion-button:focus{
+  box-shadow: none;
+  background-color: none;
+  box-shadow: none;
+  outline: none;
+}
+.accordion-item hr{
+  margin: 0px auto 10px auto;
+  border: 1px solid #DF861D;
+  z-index: 200;
+  width: 90%;
+}
+.salsa, .cantidad{
+  color: #000000 !important;
+}
+.accordion-body{
+  padding-top: 0px;
+}
+.form-check-input:checked{
+  background-color: #DF861D;
+  border-color: #DF861D;
+}
+.form-check-input:focus{
+  border-color: #DF861D;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(223,134,29,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(223,134,29,1);
+  box-shadow: 0px 0px 5px 0px rgba(223,134,29,1);
+}
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  width: 40px;          
+  height: 40px;        
+  border: 4px solid white;
+  background-color: #DF861D;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.quantity-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-cantidad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #DF861D;
+  color: white;
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.cantidad{
+  font-size: 35px;
+  color: #262626 ;
+}
+.confirmar-cantidad-modal {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.confirmar-cantidad-modal:hover, .btn-cantidad:hover{
+  background-color: #804b0f;
+  border-color: #804b0f;
+  transition: none;
+}
+
+/* FOOTER PEDIDO */
+.footer-pedido{
+  background-color: #DF861D;
+  width: 100vw;
+  height: auto;
+  position: sticky;
+  bottom: 0;
+}
+.btn-inicia-sesion-pedido{
+  background-color: white;
+  color: #DF861D;
+  font-size: 20px;
+  padding: 4px 15px;
+  margin-left: 30px;
+  white-space: nowrap;
+  width: 100%;
+}
+.datos-usuario-pedido-footer{
+  margin: 5px 0 5px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.btn-inicia-sesion-pedido:hover{
+  background-color: #804b0f;
+}
+.div-carrito{
+  display: flex;
+  justify-content: end;
+  padding: 20px 30px 10px 0px;
+  text-align: center;
+  margin-top: 5px;
+}
+.icono-carrito{
+  font-size: 45px;
+  color: white;
+}
+.icono-carrito:hover{
+  color: #804b0f;
+  cursor: pointer;
+}
+.total-productos{
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  background: red;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+/* MODAL RESUMEN PEDIDO */
+.no-scroll{
+  overflow: hidden;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  max-height: 65vh;
+  overflow-y: auto;
+  text-align: center;
+  z-index: 1000;
+}
+
+.resumen-pedido-content {
+  text-align: center;
+}
+.resumen-pedido-modal{
+  color: #804b0f;
+  font-weight: 900;
+}
+.lista-pedido {
+  list-style: none;
+  padding: 0;
+  max-height: 55vh; /* Ajusta este valor según el espacio deseado para la lista */
+  overflow-y: auto;
+  scrollbar-width: thin; /* Hace que el scroll sea delgado */
+  scrollbar-color: #DF861D #e0e0e0;
+  padding-right: 20px;
+}
+
+.pedido-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.pedido-item-left {
+  display: flex;
+  align-items: center;
+}
+.pedido-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pedido-item-img {
+  width: 100px;
+  height: 80px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.botones-cantidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cantidad-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.eliminar-item-btn {
+  color: #fff;
+  background-color: #d9534f;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.eliminar-item-btn:hover {
+  background-color: #c9302c;
+}
+.restar-button-carrito, .sumar-button-carrito{
+  border: 1px solid #DF861D !important;
+  background-color: white;
+  color: #DF861D;
+  font-size: 30px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.restar-button-carrito:hover, .sumar-button-carrito:hover{
+  border: 2px solid #DF861D !important;
+}
+.pedido-item-info {
+  display: flex;
+  flex-direction: column;
+  color: #262626;
+}
+
+.pedido-item-title {
+  color: #DF861D;
+  font-weight: bold;
+}
+
+.pedido-item-quantity,
+.pedido-item-price {
+  color: #262626;
+  font-size: 0.9em;
+}
+
+.total-price {
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #262626;
+  display: flex;
+  justify-content: end;
+}
+
+.btn-confirmar-pedido-modal{
+  font-size: 20px;
+  padding: 5px 30px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn-confirmar-pedido-modal:hover{
+  color: white;
+  background-color: #804b0f;
+  border-color: #804b0f;
+  transition: none;
+}
+.carrito-vacio{
+  color: #804b0f;
+  font-family: "Grandstander", cursive;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 987px) and (max-width: 1024px) {
+  .card-pedido {
+      max-width: 40%;
+  }
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .menu-list li {
+    font-size: 20px;
+  }
+  .menu-list li.active{
+    font-size: 25px;
+  }
+  .card-pedido {
+      max-width: 100%; /* Una columna en pantallas pequeñas */
+      margin: 0px 20px;
+  }
+  .btn-inicia-sesion-pedido{
+    margin: 0px 0px 0px 10px !important;
+  }
+}
+/* Ajustes adicionales para móviles */
+@media (max-width: 480px) {
+  .card-pedido {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .card-image-pedido {
+      width: 100%; /* La imagen ocupa el ancho completo en móviles */
+      height: 150px; /* Mantiene una altura fija */
+  }
+
+  .card-content-pedido {
+      padding: 10px;
+  }
+
+  .container-price-button {
+      flex-direction: column; /* Coloca el precio y botón en una sola columna */
+      align-items: flex-start; /* Alinea el contenido a la izquierda */
+  }
+
+  .card-button-pedido {
+      margin-top: 10px; /* Agrega un margen superior en móviles */
+      align-self: flex-end; /* Coloca el botón a la derecha en móviles */
+  }
+}
+
+@media (max-width: 991px) {
+  .horizontal-menu {
+      top: 11%;
+  }
+}
+
+@media (max-width: 1479px) {
+  .food-category{
+    justify-content: center;
+    gap: 70px;
+  }
+}
+@media (max-width: 986px) {
+  .food-category{
+    justify-content: center;
+  }
+}

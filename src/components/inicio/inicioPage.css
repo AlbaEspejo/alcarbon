@@ -1,0 +1,683 @@
+*{
+    box-sizing: border-box;
+}
+/* IMAGEN PRINCIPAL Y TEXTO */
+.img_principal{
+    filter: blur(2px);
+}
+.img_intro{
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+    padding: 0px;
+}
+.img_intro h1{
+    position: absolute;
+    color: white;
+    font-size: 10vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.img_intro span{
+    display: block;
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+}
+.img_principal{
+    width: 100%;
+}
+
+
+/* SECCIÓN ABOUT US */
+.about_us {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%; 
+    padding: 0px;
+      
+}
+.img_about_us {
+    flex: 1;
+    max-width: 100%;
+    padding: 0px;
+    margin-left: 10px;
+}
+.img_about_us img {
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+.text_about_us {
+    position: absolute;
+    left: 65%;
+    -webkit-box-shadow: 0px 0px 12px 11px rgba(223,134,29,1);
+    -moz-box-shadow: 0px 0px 12px 11px rgba(223,134,29,1);
+    box-shadow: 0px 0px 12px 11px rgba(223,134,29,1);
+    background-color: #262626;
+    padding: 50px ;
+    border-radius: 8px;
+    
+}
+.text_about_us h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.text_about_us p{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+/* CARRUSEL RESTAURANTES Y CARDS */
+.restaurantes{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: 18px;
+    border-bottom: 3px solid #DF861D;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.swiper-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px !important;
+    max-width: 100%; /* Evita que el carrusel exceda el ancho del viewport */
+    overflow: hidden
+}
+.swiper-slide{
+    padding: 15px 0px 15px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    z-index: 10;
+    color: #DF861D !important;
+    background-color: rgba(255, 255, 255, 0.918);   
+    padding: 10px 20px 10px 20px;
+    border-radius: 50%;
+    top: 50% !important;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 20px !important;
+}
+.card{
+    background-color: #262626;
+    color: white;
+    border: none;
+    box-shadow: 0 0px 8px #df851d62; /* Agrega el box-shadow */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+    padding-top: 12px;
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0px 16px #df851de8; /* Efecto de hover para el box-shadow */
+}
+.card-body{
+    width: 300px;
+    padding-left: 0;
+}
+.card-body h5 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.card-body p {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 0;
+}
+.card-img-top {
+    height: 150px;
+    width: auto;
+}
+
+/* SECCIÓN GIF-SUBSCRÍBETE */
+.subscribe {
+    position: relative;
+    padding: 20px; /* Añadido para evitar que se pegue a los bordes */
+}
+.div-gif img {
+    max-width: 100%; /* Asegura que la imagen se mantenga dentro de su contenedor */
+    height: auto; 
+}
+.div-movil {
+    position: relative; /* Evita usar absolute para mejorar el comportamiento responsive */
+    top: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    padding: 10px;
+}
+.div-texto {
+    margin-left: 0; /* Cambiado para mejor manejo en pantallas pequeñas */
+    padding: 20px;
+}
+.div-texto h1 {
+    font-size: 4vw; /* Tamaño relativo para que se ajuste en pantallas pequeñas */
+    color: #DF861D;
+    margin-top: 0; /* Ajusta el margen superior */
+}
+.div-texto h3 {
+    font-size: 2.5vw; /* Tamaño relativo para pantallas pequeñas */
+}
+.row .div-texto p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5vw; /* Tamaño relativo */
+    margin-top: 20px;
+    padding: 0 10px;
+}
+.gif-carne {
+    width: 100%; /* Mantén la imagen dentro de su contenedor */
+    height: auto; /* Asegura que la proporción se mantenga */
+    border-radius: 10px;
+}
+.logo-movil {
+    width: 100%; /* Asegura que la imagen del móvil sea responsiva */
+    height: auto;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.btn-principal {
+    padding: 10px 100px;
+    font-size: 24px;
+    background-color: #DF861D;
+    color: #fff;
+    border: 2px solid transparent; /* Borde transparente para evitar el desplazamiento */
+    cursor: pointer;
+    width: auto;
+    border-radius: 15px;
+    transition: border 0.1s ease; 
+}
+
+.btn-principal:hover {
+    border-color: #DF861D; /* Cambia el color del borde en hover */
+    transition: background-color 0.3s ease;
+}
+
+.btn-principal:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* BANNER TARJETA REGALO */
+.banner-regalo{
+    margin-top: 50px;
+    padding: 0px;
+    
+}
+.banner-regalo img{
+    height: 250px;
+    width: 100%;
+}
+
+
+/* CARRUSEL CARTA */
+.carta {
+    box-shadow: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+.carta img {
+    height: 320px;
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    filter: brightness(70%);
+    padding: 0px;
+}
+.carta img:hover{
+    filter: brightness(100%);
+}
+
+.carta .card-body {
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 50px;
+    margin: 80px 0 30px 20px;
+    border-bottom: 2px solid #DF861D;
+    display: inline-block;
+    color: white;
+}
+
+.carta h5 {
+    color: white;
+    margin: 0;
+}
+
+.carta:hover {
+    box-shadow: none;
+}
+
+/* BUSCAR RESTAURANTE */
+.search-restaurant{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.map-container {
+    position: relative;
+}
+.div-search-adress{
+    position: absolute; 
+    top: 10%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+.input-user-adress{
+    color: #262626;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 30px 10px 15px;
+    margin-right: 20px;
+    -webkit-box-shadow: 0px 0px 28px -3px rgba(38,38,38,1);
+    -moz-box-shadow: 0px 0px 28px -3px rgba(38,38,38,1);
+    box-shadow: 0px 0px 28px -3px rgba(38,38,38,1);
+}
+.input-user-adress::placeholder{
+    color: #8e8e8e;
+}
+.input-user-adress:focus{
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(38,38,38,1);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(38,38,38,1);
+    box-shadow: inset 0px 0px 10px 0px rgba(38,38,38,1);
+    place-content: none;
+}
+.btn-search-adress{
+    padding: 2px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    background-color: #a26015;
+    border: none;
+}
+.btn-search-adress:hover{
+    background-color: #DF861D;
+    color: white;
+}
+
+.btn-use-location {
+    padding: 2px 20px;
+    background-color: #327536;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+  
+.btn-use-location:hover {
+    background-color: #4CAF50;
+}
+
+/* MODAL COOKIES */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color oscuro con opacidad */
+    z-index: 999; /* Asegúrate de que esté detrás del modal */
+}
+.no-interaction *{
+    pointer-events: none; /* Deshabilitar clics */
+}
+.cookie-consent-modal .btn-cookie {
+    pointer-events: all; /* Asegura que los botones en el modal sigan siendo clicables */
+}
+.cookie-consent-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #262626;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    width: 70%;
+    max-width: 800px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accept-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #DF861D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
+
+.div-btn-cookie{
+    margin-left: 0px !important;
+    margin-top: 40px;
+}
+.btn-cookie:hover{
+    color: #DF861D;
+    transition: border 0.1s ease;
+    background-color:white;
+    transition: background-color 0.2s ease;
+}
+
+
+
+
+/* Media Queries */
+
+/* Barra de navegación */
+@media (max-width: 991px){
+    .logo-div{
+        margin-top: 20px;
+    }
+}
+
+/* Seccion About Us */
+@media (max-width: 991.98px) { /* Ajusta según necesites */
+    .text_about_us {
+        width: 40%;
+        position: relative;
+        left: 0%;
+        margin-top: 2px;
+        padding: 30px;
+        -webkit-box-shadow: 0px 0px 12px 11px rgba(223,134,29,1);
+        -moz-box-shadow: 0px 0px 12px 11px rgba(223,134,29,1);
+        box-shadow: 0px 0px 12px 6px rgba(223,134,29,1);
+    }
+    .text_about_us h3{
+        font-size: 30px;
+    }
+    .text_about_us p{
+        font-size: 16px;
+    }
+    .img_about_us img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 967px) {
+    .text_about_us{
+        padding: 15px;
+    }
+    .text_about_us h3{
+        font-size: 25px;
+    }
+    .text_about_us p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+    .text_about_us {
+        width: 90%;
+        position: relative;
+        left: 0%;
+        margin-top: 2px;
+        padding: 30px;
+        -webkit-box-shadow: 0px 0px 12px 11px rgba(223,134,29,1);
+        -moz-box-shadow: 0px 0px 12px 11px rgba(223,134,29,1);
+        box-shadow: 0px 0px 12px 6px rgba(223,134,29,1);
+    }
+    .text_about_us h3{
+        font-size: 30px;
+    }
+    .text_about_us p{
+        font-size: 16px;
+    }
+    .img_about_us {
+        margin-left: 0px;
+    }
+    .img_about_us img{
+        width: 150%;
+        height: auto;
+        margin-left: 0px;
+    }
+    .div-btn-cookie button{
+        margin: 0px;
+        white-space: nowrap;
+        width: 100%;
+    }
+}
+@media (max-width: 1060px) and (min-width: 992px) {
+    .text_about_us {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas sección gift */
+@media (max-width: 576px) {
+    .div-gif{
+        margin-bottom: 20px; /* Añade margen entre las secciones en móviles */
+        position: relative;
+    }
+    .div-movil{
+        display: none !important;
+    }
+    .div-texto{
+        position: absolute;
+        bottom: 350%;
+    }
+    .btn-principal {
+        width: 100%; /* Botón ocupa todo el ancho en pantallas pequeñas */
+        padding: 5px 20px; /* Ajusta el relleno para pantallas pequeñas */
+        font-size: 20px;
+        margin-top: -200px;
+    }
+}
+@media (max-width: 768px) {
+    .div-gif img {
+        height: auto; /* Asegura que la imagen escale bien */
+    }
+    
+    .div-movil img {
+        max-width: 70%; /* Reduce el tamaño del móvil en pantallas pequeñas */
+    }
+    
+    .div-texto h1 {
+        font-size: 8vw; /* Texto más pequeño en pantallas pequeñas */
+    }
+    
+    .div-texto h3 {
+        font-size: 5vw; /* Texto más pequeño en pantallas pequeñas */
+    }
+
+    .row .div-texto p {
+        font-size: 3vw; /* Texto más pequeño en pantallas pequeñas */
+    }
+}
+@media (max-width: 767px) {
+    .div-gif{
+        margin-bottom: 20px; /* Añade margen entre las secciones en móviles */
+        position: relative;
+        filter: brightness(70%);
+    }
+    .div-movil{
+        display: none !important;
+    }
+    .div-texto{
+        position: absolute;
+        bottom: 350%;
+    }
+    .btn-principal {
+        width: 40%; /* Botón ocupa todo el ancho en pantallas pequeñas */
+        padding: 5px 20px; /* Ajusta el relleno para pantallas pequeñas */
+        font-size: 25px;
+        margin-top: -200px;
+    }
+}
+@media (min-width: 768px) {
+    .div-gif {
+        position: relative; /* div-gif mantiene su posición relativa para permitir que el móvil se coloque encima */
+    }
+
+    .div-movil {
+        position: absolute; /* div-movil se posiciona sobre div-gif */
+        top: 20%; /* Ajusta según el diseño deseado */
+        left: 50%; /* Centrado sobre el div-gif */
+        transform: translateX(-50%); /* Centramos el div-movil horizontalmente */
+        z-index: 20; /* Asegura que esté sobre el div-gif */
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-movil {
+        width: 100%; /* Ajusta el tamaño del logo-móvil en pantallas grandes */
+    }
+    .div-texto {
+        margin-left: 25%; /* Ajusta la distancia desde la izquierda */
+        padding-right: 10%; /* Agrega padding a la derecha para ajustar el ancho */
+    }
+    .button-container{
+        margin-left: 25%;
+    }
+}
+@media (max-width: 768px) and (min-width: 768px) {
+    .div-gif{
+        margin-bottom: 20px; /* Añade margen entre las secciones en móviles */
+        position: relative;
+    }
+    .div-texto{
+        position: absolute;
+    }
+    .div-texto h1{
+        font-size: 43px;
+    }
+    .div-texto h3{
+        font-size: 22px;
+    }
+    .div-texto p{
+        font-size: 16px !important; 
+        width: 280px;
+        margin-left: -20px;
+    }
+    .btn-principal {
+        width: 100%; /* Botón ocupa todo el ancho en pantallas pequeñas */
+        padding: 5px 20px; /* Ajusta el relleno para pantallas pequeñas */
+        font-size: 20px;
+        margin-top: 290px;
+    }
+    .div-btn-cookie button{
+        margin: 0px;
+    }
+  }
+@media (max-width: 1084px){
+    .button-container button{
+       
+       padding: 8px 30px;
+    }
+}
+
+/* BANNER TARJETA REGALO */
+@media (max-width: 767px){
+    .banner-regalo{
+        margin-top: 0;
+    }
+    .subscribe{
+        padding-bottom: 0;
+    }
+    .banner-regalo img{
+        height: 180px;
+    }
+}
+
+/* MAPA Y BTN SEARCH ADRESS */
+@media (max-width: 769px) {
+    .search-restaurant{
+        font-size: 40px;
+        justify-content: center;
+    }
+    .div-search-adress {
+        flex-direction: row; /* Cambia a columna en pantallas más pequeñas */
+        align-items: end; /* Alinea todos los elementos para que ocupen el ancho completo */
+        justify-content: center;
+        bottom: 75%;
+
+    }
+
+    .input-user-adress {
+        max-width: 100%; /* Permite que el input use el 100% en pantallas pequeñas */
+        width: auto;
+        margin-top: 70px;
+        padding: 5px 15px 5px 15px;
+    }
+
+    .btn-search-adress,
+    .btn-use-location {
+        width: auto; /* Hace que el botón ocupe el ancho completo */
+        padding: 5px 15px 5px 15px;
+        font-size: 14px;
+    }
+    .btn-use-location{
+        width: 150px;
+        padding: 6px 15px 6px 15px !important;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 641px) {
+    .div-search-adress {
+        bottom: 55%;
+    }
+}
+@media (max-width: 528px) {
+    .search-restaurant{
+        font-size: 30px;
+
+    }
+}
+
+/* MODAL ACEPTAR COOKIES */
+
+
+
+

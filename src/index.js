@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importar Bootstrap CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importar Bootstrap JS con Popper.js
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { CartProvider } from './context/CartContext';
+
+if (!navigator.geolocation) {
+  alert('Tu navegador no tiene acceso a la geolocalizacion');
+  throw new Error("Tu navegador no tiene acceso a la geolocalizacion");
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <CartProvider>
+      <App />
+    </CartProvider>
   </React.StrictMode>
 );
 

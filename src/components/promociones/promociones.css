@@ -1,0 +1,62 @@
+
+.title-promo{
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+.title-promo h1{
+    font-family: "Grandstander", cursive;
+    font-size: 65px;
+    font-weight: 900;
+}
+.card-promo{
+    padding-top: 0px;
+    border: 2px solid white;
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    width: 25rem;
+}
+.img-promo{
+    height: 230px;
+}
+.card-title-promo{
+    color: #DA002D;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5px;
+}
+.card-text-promo-socios{
+    padding: 10px;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 800;
+}
+.card-text-promo{
+    color: #262626;
+    font-size: 13px;
+}
+
+.btn-card-promo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 40px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.btn-card-promo:hover{
+    background-color: #934F00;
+    border-color: #934F00;
+}
+.modal-promo .modal-content{
+    width: 100%;
+}
+.modal-promo h5{
+    font-size: 30px;
+}
+@media (max-width: 767px){
+    .title-promo h1{
+        font-size: 30px;
+        margin-top: 90px;
+    }
+}

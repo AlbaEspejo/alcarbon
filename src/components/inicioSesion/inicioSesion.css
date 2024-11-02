@@ -1,0 +1,395 @@
+
+.background-wrapper-friend {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.background-image-friend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../MEDIA/IMG/IMG_REGISTRATE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+    z-index: -1;
+}
+.title-friend {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+    z-index: 2; 
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+    font-size: 70px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Estilos generales */
+  .container-friends {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .left-div {
+    width: 45%;
+  }
+  
+  .left-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #df861d;
+  }
+  
+  .info-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .info-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .info-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .info-text p{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .info-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .info-description {
+    font-size: 0.8rem;
+    color: #ffffffc6;
+  }
+  
+  .button-container-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+  }
+  .btn-sesion{
+    background-color: #262626;
+    border: 2px solid #df861d;
+  }
+  .btn-sesion:hover{
+    background-color: #df861d;
+  }
+  .no-margin{
+    margin: 0px !important;
+  }
+  .btn-sesion, .btn-unirme{
+    padding: 10px 80px;
+  }
+  
+  /* Segundo div - Formulario */
+  .right-div {
+    width: 45%;
+  }
+  
+  .form-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #df861d;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: #ffffffc6;
+  }
+  .input-email-modal, .input-password-modal{
+    border: 1px solid #e1a35d !important;
+  }
+  .form-input,
+  .form-textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .form-input:focus{
+    border: none;
+    outline: none;
+  }
+  .form-textarea {
+    height: 80px;
+    outline: none;
+  }
+  .form-textarea::placeholder{
+    color: red;
+  }
+  .form-input::placeholder{
+    color: red;
+  }
+  .terms-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  #terms{
+    width: 25px;
+    height: 25px;
+  }
+  .terminos-condiciones{
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  .error-message{
+    margin: -15px 0 0 0 ;
+  }
+  .submit-button {
+    padding: 10px 20px;
+    width: 400px;
+    margin-right: 130px;
+    margin-top: 5px;
+    background-color: #df861d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+  
+  .submit-button:hover {
+    background-color: #262626;
+    border: 2px solid #df861d;
+  }
+  /* MODAL INICIO SESION */
+  .btn-inicio-sesion-close{
+    color: red !important;
+    background-color: transparent;
+    margin-top: -80px !important;
+    left: 50% !important;
+  }
+
+  /* MONDAL MENSAJE ENVIADO */
+  .modal-title{
+    color: #262626;
+  }
+  .btn-cerrar-modal{
+    font-size: 16px;
+    background-color: #df861d;
+    color: white;
+    padding: 5px 20px;
+  }
+  .btn-cerrar-modal:hover{
+    color: #df861d;
+    border: 1px solid #df861d;
+  }
+
+
+
+  @media (min-width: 1085px) and (max-width: 1309px){
+    .btn-sesion{
+        white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    /* Ajustes para pantallas medianas (tablets) */
+    .title-friend{
+        font-size: 55px;
+    }
+    .container-friends {
+      padding: 15px;
+      margin-top: 90px;
+    }
+  
+    .left-div, .right-div {
+      width: 48%;
+    }
+  
+    .left-title, .form-title {
+      font-size: 2rem;
+    }
+    .info-heading{
+        font-size: 1rem;
+    }
+    .info-description{
+        font-size: 0.7rem;
+    }
+    .submit-button {
+      width: 70%;
+      margin-right: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    
+    .background-wrapper-friend {
+        position: relative;
+    }
+    .background-image-friend {
+        background-attachment: fixed;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150vh;
+        background-image: url(../../MEDIA/IMG/IMG_REGISTRATE.jpg);
+        background-position: center;
+        filter: brightness(30%);
+        z-index: -1;
+    }
+    .title-friend {
+      margin-top: 5% !important;
+    }
+    .container-friends {
+      flex-direction: column;
+      padding: 10px;
+      margin: 80px;
+    }
+    .right-div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left-div,
+    .right-div {
+      width: 100%; /* Divs ahora ocupan todo el ancho */
+      margin-bottom: 20px; /* Espacio entre divs cuando están apilados */
+      justify-content: center !important;
+    }
+    .button-container-login {
+      justify-content: center; 
+      gap: 25px;
+    }
+    .btn-sesion, .btn-unirme{
+        width: 100%;
+        margin-top: -40px !important;
+        margin-bottom: 20px;
+        padding: 5px 30px !important;
+    }
+
+    .left-title{
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+    .left-title, .form-title {
+      font-size: 1.8rem;
+      text-align: center; /* Centrar títulos en pantallas pequeñas */
+    }
+  
+    .info-heading {
+      font-size: 1rem;
+    }
+  
+    .info-description {
+      font-size: 0.75rem; /* Reducir descripción en pantallas pequeñas */
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar el contenido del formulario */
+        justify-content: center; /* Centrar verticalmente */
+        width: 100%; /* Asegurar que ocupe todo el ancho */
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 100%; /* Ancho del input en pantallas pequeñas */
+        max-width: 600px; /* Limitar el ancho máximo en pantallas medianas */
+        font-size: 0.9rem;
+        margin: 10px auto; /* Centramos los inputs */
+    }
+
+    .terms-container {
+        width: 100%; /* Asegurar que el checkbox también esté centrado */
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #terms {
+        margin-right: 10px;
+    }
+
+    .terminos-condiciones {
+        text-align: center; /* Centrar el texto de términos y condiciones */
+    }
+
+    .error-message {
+        text-align: center;
+        width: 90%; /* Centrar los mensajes de error también */
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .submit-button{
+        width: 300px !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Ajustes para pantallas muy pequeñas (móviles pequeños) */
+    .left-title, .form-title {
+      font-size: 1.5rem;
+    }
+  
+    .info-heading {
+      font-size: 0.9rem;
+    }
+  
+    .info-description {
+      font-size: 0.7rem;
+    }
+  
+    .form-label {
+      font-size: 0.75rem; /* Ajuste de tamaño de las etiquetas de formulario */
+    }
+  
+    .submit-button {
+      font-size: 0.85rem;
+      padding: 8px 16px;
+    }
+  }
+
+  @media (min-width:769px) and (max-width: 1199px) {
+    .title-friend{
+      margin-top: -20px !important;
+    }
+    
+  }
+

@@ -1,0 +1,68 @@
+
+.header-aviso-legal {
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+    margin-top: 8% !important;
+    height: 500px;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("../MEDIA/IMG/IMG_COCINA.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column; 
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.header-aviso-legal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../MEDIA/IMG/IMG_COCINA.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: 1;
+}
+
+.header-aviso-legal header {
+    position: relative;
+    margin-top: 10%;
+    z-index: 2;
+}
+.header-aviso-legal header h1{
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+    font-size: 80px;
+}
+.section-aviso-legal{
+    margin-top: 30px;
+}
+.section-aviso-legal h4{
+    color: #DF861D;
+}
+.contenido-aviso-legal {
+    margin-top: -5% !important;
+    background-image: url("../MEDIA/IMG/paper-texture.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: "Inter", sans-serif;
+    color: #262626;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px #DF861D;
+    max-width: 900px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 2;
+}

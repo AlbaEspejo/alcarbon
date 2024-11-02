@@ -1,0 +1,210 @@
+
+.title-reserva{
+    margin-top: 7%;
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+    font-size: 60px;
+}
+.formulario-reserva{
+    font-family: "Inter", sans-serif;
+    padding: 0px 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#emailReserva::placeholder{
+    color: rgba(128, 128, 128, 0.697);
+}
+.form-select, .form-control{
+    border: none;
+    box-shadow: none;
+}
+.personasReserva, .nombreReserva, .telefonoReserva, .emailReserva{
+    font-size: 14px;
+    color: #DF861D;
+    font-weight: 500;
+}
+.reserva-grupos{
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #a26015;
+}
+hr{
+    width: 80%;
+    font-weight: 900;
+    border: 1px solid white;
+}
+
+/* styles.css */
+.react-calendar {
+    border: none; /* Eliminar el borde por defecto */
+    background-color: #f8f9fa; /* Fondo más claro */
+    border-radius: 6px; /* Bordes redondeados */
+}
+.react-calendar__navigation__prev2-button, .react-calendar__navigation__prev-button{
+    background-color: #DF861D !important;
+}
+.react-calendar__month-view__days {
+    padding: 0.5rem; /* Espaciado interno para los días */
+}
+.react-calendar__tile {
+    max-width: 50px; /* Ajustar el tamaño de los días */
+    height: 50px; /* Ajustar el tamaño de los días */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Bordes redondeados para los días */
+    transition: background-color 0.2s; /* Transición suave para el hover */
+}
+/* Color de fondo de los días seleccionados */
+.react-calendar__tile--active{
+    background-color: #DF861D !important;
+    color: white;
+}
+/* Color de fondo para el hover */
+.react-calendar__tile:hover {
+    background-color: #e9ecef; /* Color gris claro en hover */
+}
+.react-calendar__tile--now {
+    background-color: #f8f9fa;
+    color: black;
+}
+.react-calendar__tile--now:hover{
+    background-color: #a260158c !important;
+    color: white !important;
+}
+/* Color de texto de los días */
+.react-calendar__tile--inactive {
+    color: #6c757d; /* Color gris para días no activos */
+}
+
+/* Personalizar el mes y año */
+.react-calendar__navigation {
+    background-color: #DF861D; /* Color de fondo */
+    border-radius: 6px 6px 0px 0px; /* Bordes redondeados */
+    color: white; /* Color de texto */
+}
+.react-calendar__navigation button {
+    text-transform: uppercase;
+    color: white;
+}
+.react-calendar__navigation button:focus{
+    background-color: #a26015 !important;
+    color: white;
+}
+.react-calendar__navigation button:hover{
+    background-color: #a26015 !important;
+    color: white;
+    text-transform: uppercase;
+}
+.title-horario, .title-fecha{
+    font-size: 40px;
+}
+.div-comidas-cenas{
+    border: 2px solid #a26015;
+    border-radius: 8px;
+    width: 80%;
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.comida-reserva h5{
+    font-size: 30px;
+}
+.cena-reserva h5{
+    font-size: 30px;
+}
+.btn-horario{
+    border: 1px solid #DF861D;
+    border-radius: 8px;
+    background-color: #262626;
+    color: #DF861D;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+.btn-horario:hover{
+    background-color: #a26015;
+    color: white;
+    border: 1px solid #a26015;
+}
+.btn-horario.active{
+    background-color: #a26015;
+    border: 1px solid #a26015;
+    box-shadow: none;
+}
+
+.react-calendar__viewContainer{
+    padding: 5px; /* Espaciado alrededor del contenedor */
+}
+
+/* Ajustes para los botones de selección de mes y año */
+.react-calendar__year-view__months button,
+.react-calendar__decade-view__years button,
+.react-calendar__century-view__decades button {
+    padding: 20px 50px !important;   /* Aumenta el espacio interno de cada botón */
+    margin: 15px;          /* Espacio entre los botones */
+    font-size: 1rem;    /* Tamaño de fuente más grande */
+    width: 100% !important;          /* Ancho uniforme */
+    height: 10px;         /* Altura uniforme */
+    border-radius: 8px;   /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave en el fondo */
+}
+
+/* Efecto hover para botones */
+.react-calendar__year-view__months button:hover,
+.react-calendar__decade-view__years button:hover,
+.react-calendar__century-view__decades button:hover {
+    background-color: #e0e0e0; /* Cambia el fondo en hover */
+}
+
+.react-calendar__year-view__months button:focus,
+.react-calendar__decade-view__years button:focus,
+.react-calendar__century-view__decades button:focus {
+    background-color: #a26015 !important;
+}
+.mi-modal-reserva .modal-dialog-centered{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.mi-modal-reserva h5{
+    font-family: "Grandstander", cursive;
+    font-weight: 900;
+    font-size: 30px;
+    color: #DF861D;
+    margin: auto;
+
+}
+.modal-reserva{
+    color: #262626;
+}
+.datos-reserva{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 530px){
+    .div-comidas-cenas{
+        width: 100%;
+    }
+    .nombreReserva, .telefonoReserva, .emailReserva, .title-horario{
+        margin-top: 20px;
+    }
+    .title-reserva{
+        margin-top: 15%;
+    }
+}
+@media (min-width:992px) and (max-width: 1060px){
+    .div-comidas-cenas{
+        width: 100%;
+    }
+
+}
+@media (max-width: 580px){
+    .title-reserva{
+        margin-top: 15%;
+    }
+}

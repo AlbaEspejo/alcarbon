@@ -1,0 +1,279 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    background-color: #262626;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+}
+/* MENÚ NAVEGACIÓN */
+.menu_navegacion{
+    margin: 0px;
+    padding: 0px;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+}
+.menu_navegacion.scrolled {
+    background-color: rgba(0, 0, 0, 0.86);
+}
+.enlaces_pagina {
+    white-space: nowrap;
+}
+.logo-div{
+    padding-left: 0px;
+}
+.logo{
+    width: 80px !important;
+    margin-top: -30px;
+}
+.logo_login{
+    width: 50px;
+    transition: transform 0.6s ease;
+    margin-top: -10px;
+}
+.logo_login:hover{
+    transform: scale(1.2);
+}
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.navbar-toggler:focus{
+    border: none;
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23DF861D' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-size: 45px 80px;
+    width: 45px;
+    height: 80px;
+}
+.nav-link{
+    color: white;
+    font-size: 26px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.nav-link:hover{
+    color: #DF861D;
+}
+.nav-link.active{
+    color: #DF861D;
+}
+.promocion{
+    color: #fdc029;
+}
+.user-name-display{
+    color: red;
+}
+.div-registrado-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.div-registrado-icon a{
+    margin-right: 0px;
+    margin-top: -20px;
+}
+.small-icon-registrado{
+    width: 40px;
+    margin: 0px;
+}
+.nombre-registrado{
+    color: #DF861D;
+    font-size: 20px;
+    margin: 0px;
+}
+.logout-message{
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.logout-message button{
+    color: rgb(199, 21, 21);
+    font-size: 20px;
+    font-weight: 900;
+}
+.logout-message button:hover{
+    background-color: rgb(199, 21, 21);
+    color: white;
+}
+
+/* MENÚ DESPLEGABLE */
+
+.offcanvas{
+    background-color: #262626;
+}
+.offcanvas-header{
+    border-bottom: 1px solid #DF861D;
+}
+.offcanvas-title{
+    color: #DF861D;
+    font-family: "Grandstander", cursive;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 7px;
+}
+.btn-close-canvas{
+    background-color: #DF861D;
+}
+.link-offcanvas{
+    color: white;
+}
+.link-offcanvas:focus{
+    color: #DF861D;
+}
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en caso de espacio limitado */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DF861D;
+    color: white;
+    font-size: 25px;
+    padding: 15px; /* Agrega un poco de relleno */
+}
+
+.footer-left {
+    position: relative;
+}
+
+.icon-container {
+    cursor: pointer;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Asegura que se ajusten en pantallas pequeñas */
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px; /* Ajuste del margen */
+    font-size: 20px;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.divider {
+    margin: 0 5px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10px; /* Espaciado entre iconos sociales */
+}
+
+.social-icon {
+    color: white;
+    font-size: 40px;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.instagram svg {
+    background: linear-gradient(#fed373, #f15245, #d92e7f, #9b36b7, #515ecf);
+    border-radius: 20%;
+    display: inline-block;
+}
+
+.instagram {
+    color: rgb(255, 255, 255);
+}
+
+.instagram:hover,
+.linkedin:hover,
+.facebook:hover,
+.twitter:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-out;
+}
+
+.instagram:hover {
+    color: white;
+}
+
+.linkedin {
+    color: #0073b1;
+}
+
+.whatssap {
+    color: #007a2d;
+    font-size: 40px;
+}
+
+.whatssap:hover {
+    color: #007a2d;
+}
+
+.whatssap:focus {
+    outline: none;
+}
+
+.react-tooltip {
+    background-color: #007a2d !important;
+    padding: 3px 5px;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        font-size: 18px;
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos en pantallas pequeñas */
+    }
+    
+    .footer-center {
+        justify-content: center; /* Centra los enlaces */
+    }
+    
+    .social-icon {
+        font-size: 25px;
+    }
+    
+    .whatssap {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 541px) {
+    .footer {
+        font-size: 15px;
+    }
+    
+    .footer-link {
+        font-size: 14px; /* Tamaño de fuente más pequeño para enlaces */
+    }
+}
+
+@media (max-width: 494px) {
+    .footer {
+        font-size: 15px;
+    }
+    
+    .social-icon {
+        font-size: 25px;
+    }
+    
+    .whatssap {
+        font-size: 25px;
+    }
+}
