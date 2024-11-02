@@ -3,7 +3,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import CartaPage from './pages/cartaPage';
 import InicioPage from './pages/inicioPage';
 import PedidoPage from './pages/pedidoPage';
