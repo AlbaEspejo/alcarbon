@@ -1,7 +1,7 @@
 
 import restaurantAtocha from "../../MEDIA/IMG/IMG_RESTAURANTE_ATOCHA.png"
 import restaurantCastellana from "../../MEDIA/IMG/IMG_RESTAURANTE_CASTELLANA.png"
-import restaurantGranvia from "../../MEDIA/IMG/IMG_RESTAURANTE_GRANVÍA.png"
+import restaurantGranvia from "../../MEDIA/IMG/IMG_RESTAURANTE_GRANVIA.png"
 import restaurantMalaga from "../../MEDIA/IMG/IMG_RESTAURANTE_MALAGA.jpg"
 import restaurantMurcia from "../../MEDIA/IMG/IMG_RESTAURANTE_MURCIA.jpg"
 import restaurantIbiza from "../../MEDIA/IMG/IMG_RESTAURANTE_IBIZA.jpeg"
