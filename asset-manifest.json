@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alcarbon/static/css/main.a63b5d35.css",
-    "main.js": "/alcarbon/static/js/main.75bca9e1.js",
+    "main.js": "/alcarbon/static/js/main.4bf2c363.js",
     "static/js/453.2ab26695.chunk.js": "/alcarbon/static/js/453.2ab26695.chunk.js",
     "static/media/IMG_NEWSLETTER.gif": "/alcarbon/static/media/IMG_NEWSLETTER.066b9e8c0f5ac67b9465.gif",
     "static/media/IMG_RESERVAS.png": "/alcarbon/static/media/IMG_RESERVAS.3b7b5b8e542f90847c2b.png",
@@ -39,8 +39,8 @@
     "static/media/IMG_EGGCELLENT_BURGER.png": "/alcarbon/static/media/IMG_EGGCELLENT_BURGER.92dcfc43f69704af81f2.png",
     "static/media/IMG_PIEMONTESE.jpg": "/alcarbon/static/media/IMG_PIEMONTESE.91fbf563d06a2971781d.jpg",
     "static/media/IMG_5_FORMAGGI.jpg": "/alcarbon/static/media/IMG_5_FORMAGGI.321b584d40c6bdc4f31c.jpg",
-    "static/media/IMG_TEQUEÑOS.jpg": "/alcarbon/static/media/IMG_TEQUEÑOS.1f79f96bb9b5371cf2d8.jpg",
-    "static/media/IMG_BOLOÑESA.jpg": "/alcarbon/static/media/IMG_BOLOÑESA.c510918153c6f21e60f9.jpg",
+    "static/media/IMG_TEQUENOS.jpg": "/alcarbon/static/media/IMG_TEQUENOS.1f79f96bb9b5371cf2d8.jpg",
+    "static/media/IMG_BOLONESA.jpg": "/alcarbon/static/media/IMG_BOLONESA.c510918153c6f21e60f9.jpg",
     "static/media/IMG_OFERTAS_15_.png": "/alcarbon/static/media/IMG_OFERTAS_15_.361c14263e485cac9772.png",
     "static/media/IMG_TIRAMISU.jpg": "/alcarbon/static/media/IMG_TIRAMISU.25894ed96b6c89d02ee1.jpg",
     "static/media/IMG_MOZARELLA.jpg": "/alcarbon/static/media/IMG_MOZARELLA.a64d50c283c9e9ef6fe7.jpg",
@@ -81,11 +81,11 @@
     "static/media/ICON_LOGIN.png": "/alcarbon/static/media/ICON_LOGIN.a3788a0dc036112f5779.png",
     "index.html": "/alcarbon/index.html",
     "main.a63b5d35.css.map": "/alcarbon/static/css/main.a63b5d35.css.map",
-    "main.75bca9e1.js.map": "/alcarbon/static/js/main.75bca9e1.js.map",
+    "main.4bf2c363.js.map": "/alcarbon/static/js/main.4bf2c363.js.map",
     "453.2ab26695.chunk.js.map": "/alcarbon/static/js/453.2ab26695.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a63b5d35.css",
-    "static/js/main.75bca9e1.js"
+    "static/js/main.4bf2c363.js"
   ]
 }
