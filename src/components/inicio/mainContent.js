@@ -36,7 +36,7 @@ const MainContent = () =>{
     const navigate = useNavigate();
 
     const handleRegistroClick = () => {
-        navigate('/registro');
+        navigate('/inicio-sesion');
     };
 
     return(
