@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PrincipalButton from "../inicio/principalButton"
 
+import CustomAlert from "../global/customAlert";
+
 const ModalInicioSesion = ({ onClose, message, className,showCloseButton = true }) => {
     const [showPassword, setShowPassword] = useState(false);
     const [email, setEmail] = useState('');
@@ -16,6 +18,10 @@ const ModalInicioSesion = ({ onClose, message, className,showCloseButton = true 
     const handleEmailChange = (e) => setEmail(e.target.value);
     const handlePasswordChange = (e) => setPassword(e.target.value);
     const navigate = useNavigate();
+
+    const [customClass, setCustomClass] = useState('');
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState('');
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -45,12 +51,21 @@ const ModalInicioSesion = ({ onClose, message, className,showCloseButton = true 
         // Buscar el usuario que coincide con el email ingresado
         const userData = storedData.find(user => user.email === inputEmail);
         if (userData) {
-            alert(`Email: ${userData.email}\nContraseña: ${userData.password}`);
+            setAlertMessage(
+                <>
+                <p><strong>EMAIL:</strong> {userData.email}</p>
+                <p><strong>CONTRASEÑA:</strong> {userData.password}</p>
+            </>
+            );
+            setCustomClass("alertaUserPassword")
+            setShowAlert(true);
         } else {
-            alert('No se encontró ninguna cuenta con ese Email');
+            setAlertMessage('No se encontró ninguna cuenta con ese Email');
+            setCustomClass("mensaje-alerta")
+            setShowAlert(true);
         }
     };
-
+    const closeAlert = () => setShowAlert(false);
     const handleRegistroClick = () => {
         onClose();
         navigate('/registro'); 
@@ -122,6 +137,13 @@ const ModalInicioSesion = ({ onClose, message, className,showCloseButton = true 
                     </div>
                 </div>
             </div>
+            {/* Modal de alerta personalizado */}
+            <CustomAlert
+                show={showAlert}
+                handleClose={closeAlert}
+                message={alertMessage}
+                customClass={customClass}
+            />
         </>
     );
 };

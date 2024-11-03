@@ -1,0 +1,20 @@
+
+.mensaje-alerta{
+    color: rgb(193, 29, 29) !important;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+.btn-mensaje-alerta{
+    padding: 5px 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+}
+.btn-mensaje-alerta:hover{
+    color: #DF861D;
+}
+.alertaUserPassword{
+    font-family: "Inter", sans-serif;
+    color: black !important;
+}

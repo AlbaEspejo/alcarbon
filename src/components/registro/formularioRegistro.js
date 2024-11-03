@@ -6,9 +6,15 @@ import ModalInicioSesion from "../inicioSesion/modalInicioSesion";
 import { useNavigate } from "react-router-dom";
 import emailjs from 'emailjs-com';
 
+import CustomAlert from "../global/customAlert";
+
+
 const FormularioRegistro = () => {
     const navigate = useNavigate();
     const passwordValidation = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState('');
 
     const [formData, setFormData] = useState({
         name: '',
@@ -81,7 +87,8 @@ const FormularioRegistro = () => {
                 .then((response) => {
                     setShowModal(true);
                 }, (error) => {
-                    alert('Error al enviar el email.');
+                    setAlertMessage("Error al enviar el email.");
+                    setShowAlert(true);
                 });
             
             setFormData({
@@ -105,6 +112,7 @@ const FormularioRegistro = () => {
             setErrors(newErrors);
         }
     };
+    const closeAlert = () => setShowAlert(false);
 
     const handleCheckboxChange = (e) => {
         const { checked } = e.target;
@@ -277,6 +285,12 @@ const FormularioRegistro = () => {
             message="GRACIAS POR REGISTRARTE, TE HEMOS ENVIADO UN EMAIL. YA PUEDES EMPEZAR TU PEDIDO" 
             className="modal-registro-exito"
             showCloseButton={false} />}
+        
+        <CustomAlert
+                show={showAlert}
+                handleClose={closeAlert}
+                message={alertMessage}
+            />
 
         </>
     )

@@ -7,6 +7,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { CartProvider } from './context/CartContext';
 
+
 if (!navigator.geolocation) {
   alert('Tu navegador no tiene acceso a la geolocalizacion');
   throw new Error("Tu navegador no tiene acceso a la geolocalizacion");

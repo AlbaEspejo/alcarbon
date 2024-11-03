@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react';
 import { GoogleMap, Marker } from '@react-google-maps/api';
 
+import CustomAlert from "../global/customAlert";
+
 const Mapa = () => {
   const [mapCenter, setMapCenter] = useState({
     lat: 40.420038,
@@ -12,6 +14,10 @@ const Mapa = () => {
   const [address, setAddress] = useState('');
   const [placeholderVisible, setPlaceholderVisible] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+
+  const [customClass, setCustomClass] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
 
   useEffect(() => {
     const fetchLocation = () => {
@@ -56,14 +62,18 @@ const Mapa = () => {
           setMarkerPosition(coords); // Mueve el marcador a la nueva posición
         },
         () => {
-          alert('No se pudo obtener la ubicación.');
+          setAlertMessage("No se pudo obtener la ubicación.");
+          setCustomClass("mensaje-alerta")
+          setShowAlert(true);
         }
       );
     } else {
-      alert('Tu navegador no soporta la geolocalización.');
+      setAlertMessage("Tu navegador no soporta la geolocalización.");
+      setCustomClass("mensaje-alerta")
+      setShowAlert(true);
     }
   };
-
+  const closeAlert = () => setShowAlert(false);
   const handleGeocode = () => {
     const geocoder = new window.google.maps.Geocoder();
     geocoder.geocode({ address }, (results, status) => {
@@ -76,7 +86,9 @@ const Mapa = () => {
         setMapCenter(coords);
         setMarkerPosition(coords);
       } else {
-        alert('No se pudo encontrar la dirección: ' + status);
+        setAlertMessage('No se pudo encontrar la dirección: ' + status);
+        setCustomClass("mensaje-alerta")
+        setShowAlert(true);
       }
     });
   };
@@ -89,37 +101,46 @@ const Mapa = () => {
   };
 
   return (
-    <div className="map-container">
-      <div className="div-search-adress d-flex">
-        <input
-          type="text"
-          value={address}
-          className="input-user-adress"
-          onChange={(e) => setAddress(e.target.value)}
-          placeholder={placeholderVisible ? "Introduce una dirección" : ""}
-          onFocus={() => setPlaceholderVisible(false)}
-          onBlur={() => setPlaceholderVisible(true)}
-          onKeyDown={handleKeyDown}
-        />
-        <button onClick={handleGeocode} className="btn btn-principal btn-search-adress">
-          Buscar
-        </button>
-        <button onClick={useMyLocation} className="btn btn-principal btn-use-location">
-          Usar mi ubicación
-        </button>
+    <>
+      <div className="map-container">
+        <div className="div-search-adress d-flex">
+          <input
+            type="text"
+            value={address}
+            className="input-user-adress"
+            onChange={(e) => setAddress(e.target.value)}
+            placeholder={placeholderVisible ? "Introduce una dirección" : ""}
+            onFocus={() => setPlaceholderVisible(false)}
+            onBlur={() => setPlaceholderVisible(true)}
+            onKeyDown={handleKeyDown}
+          />
+          <button onClick={handleGeocode} className="btn btn-principal btn-search-adress">
+            Buscar
+          </button>
+          <button onClick={useMyLocation} className="btn btn-principal btn-use-location">
+            Usar mi ubicación
+          </button>
+        </div>
+        {isLoading ? (
+          <div>Loading...</div> // Mensaje de carga
+        ) : (
+          <GoogleMap
+            mapContainerStyle={mapContainerStyle}
+            center={mapCenter}
+            zoom={16}
+          >
+            {markerPosition && <Marker position={markerPosition} />}
+          </GoogleMap>
+        )}
       </div>
-      {isLoading ? (
-        <div>Loading...</div> // Mensaje de carga
-      ) : (
-        <GoogleMap
-          mapContainerStyle={mapContainerStyle}
-          center={mapCenter}
-          zoom={16}
-        >
-          {markerPosition && <Marker position={markerPosition} />}
-        </GoogleMap>
-      )}
-    </div>
+      {/* Modal de alerta personalizado */}
+      <CustomAlert
+      show={showAlert}
+      handleClose={closeAlert}
+      message={alertMessage}
+      customClass={customClass}
+      />
+  </>
   );
 };
 

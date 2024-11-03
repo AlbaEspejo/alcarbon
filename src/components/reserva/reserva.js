@@ -5,11 +5,18 @@ import FormularioReserva from "./formularioReserva";
 import "./reserva.css"
 import PrincipalButton from "../inicio/principalButton";
 import ModalMensajeEnviado from "../inicioSesion/modalMensajeEnviado";
+import CustomAlert from "../global/customAlert";
+
+
 
 
 const Reserva = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const calendarioRef = useRef(null);
+
+    const [customClass, setCustomClass] = useState('');
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState('');
 
     const [formValues, setFormValues] = useState({
         personas: '2',
@@ -47,7 +54,9 @@ const Reserva = () => {
         if (personas && nombre && telefono && email && fecha && hora) {
             setIsModalOpen(true);
         } else {
-            alert("Por favor, completa todos los campos");
+            setAlertMessage("Por favor, completa todos los campos");
+            setCustomClass("mensaje-alerta")
+            setShowAlert(true);
         }
     };
 
@@ -67,7 +76,7 @@ const Reserva = () => {
             calendarioRef.current.resetSelection();
         }
     };
-
+    const closeAlert = () => setShowAlert(false);
     return (
         <>
             <div className="d-flex justify-content-center">
@@ -102,6 +111,13 @@ const Reserva = () => {
                     showCloseButton={false}
                 />
             )}
+            {/* Modal de alerta personalizado */}
+            <CustomAlert
+                show={showAlert}
+                handleClose={closeAlert}
+                message={alertMessage}
+                customClass={customClass}
+            />
         </>
     );
 };
