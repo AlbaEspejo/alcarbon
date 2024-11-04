@@ -10,9 +10,7 @@ const Registro = () =>{
     return(
         <>
             <Menu />
-            <div className="title-registro">
-                <h1 className="title-friend title-registro">CREA TU CUENTA</h1>
-            </div>
+            <h1 className="title-registro">CREA TU CUENTA</h1>
             <FormularioRegistro />
             <Footer />
         </>

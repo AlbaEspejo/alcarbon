@@ -138,160 +138,161 @@ const FormularioRegistro = () => {
 
     return(
         <>
-        <form className="row needs-validation container d-flex justify-content-center m-auto mb-5" onSubmit={handleSubmit} noValidate>
-            <div className="col-12 d-flex formulario-div flex-column flex-md-row">
-                <div className="col-12 col-md-6 d-flex flex-column justify-content-center mb-3 mb-md-0">
-                    <div className="col-12">
-                        <label htmlFor="name" className="form-label">Nombre y Apellidos*</label>
-                        <input 
-                            type="text" 
-                            className="form-control input-registro" 
-                            id="name" 
-                            value={formData.name}
-                            onChange={handleChange} required
-                        />
-                        {errors.name && <span style={{ color: 'red', fontSize: '12px', fontFamily: 'Inter, sans-serif', fontWeight:'700' }}>{errors.name}</span>}
-                    </div>
-                    <div className="col-12 mt-3">
-                        <label htmlFor="email" className="form-label">Email*</label>
-                        <input 
-                            type="email" 
-                            className="form-control input-registro" 
-                            id="email" 
-                            value={formData.email}
-                            onChange={handleChange} required
-                        />
-                        {errors.email && <span style={{ color: 'red', fontSize: '12px', fontFamily: 'Inter, sans-serif', fontWeight:'700' }}>{errors.email}</span>}
-                    </div>
-                    <div className="col-12 mt-3">
-                        <label htmlFor="phone" className="form-label">Teléfono</label>
-                        <input type="text" className="form-control" id="phone" value={formData.phone} onChange={handleChange} />
-                    </div>
-                    <div className="col-12 mt-3">
-                        <label htmlFor="cumpleaños" className="form-label">Cumpleaños</label>
-                        <input type="date" className="form-control" id="cumpleaños" value={formData.cumpleaños} onChange={handleChange} />
-                    </div>
-                    
-                </div>
-                
-                <div className="col-12 col-md-6 d-flex flex-column justify-content-center mb-3 mb-md-0">
-                    <div className="address d-flex flex-wrap">
-                        <div className="col-12 col-md-6">
-                            <label htmlFor="address" className="form-label">Dirección</label>
-                            <input type="text" className="form-control" id="address" value={formData.address} onChange={handleChange} />
-                        </div>
-                        <div className="col-6 col-md-3 mt-3 mt-md-0">
-                            <label htmlFor="addressNumber" className="form-label">Número</label>
-                            <input type="text" className="form-control" id="addressNumber" value={formData.addressNumber} onChange={handleChange} />
-                        </div>
-                        <div className="col-6 col-md-3 mt-3 mt-md-0">
-                            <label htmlFor="addressPortal" className="form-label">Portal</label>
-                            <input type="text" className="form-control" id="addressPortal" value={formData.addressPortal} onChange={handleChange} />
-                        </div>
-                    </div>
-                    <div className="country d-flex flex-wrap mt-3">
-                        <div className="col-12 col-md-6">
-                            <label htmlFor="ciudad" className="form-label">Ciudad</label>
-                            <input type="text" className="form-control" id="ciudad" value={formData.ciudad} onChange={handleChange} />
-                        </div>
-                        <div className="col-6 col-md-3 mt-3 mt-md-0">
-                            <label htmlFor="provincia" className="form-label">Provincia</label>
-                            <input type="text" className="form-control" id="provincia" value={formData.provincia} onChange={handleChange} />
-                        </div>
-                        <div className="col-6 col-md-3 mt-3 mt-md-0">
-                            <label htmlFor="postalCode" className="form-label">C.P</label>
-                            <input type="text" className="form-control" id="postalCode" value={formData.postalCode} onChange={handleChange} />
-                        </div>
-                    </div>
-                    <div className="col-12 mt-3">
-                        <label htmlFor="password" className="form-label">Contraseña*</label>
-                        <div className="input-group">
+        <div className="d-flex justify-content-center m-auto p-4">
+            <form className="row needs-validation container-fluid d-flex justify-content-center m-auto mb-5" onSubmit={handleSubmit} noValidate>
+                <div className="col-12 d-flex formulario-div flex-column flex-md-row">
+                    <div className="col-12 col-md-6 d-flex flex-column justify-content-center mb-3 mb-md-0">
+                        <div className="col-12">
+                            <label htmlFor="name" className="form-label">Nombre y Apellidos*</label>
                             <input 
-                                type={showPassword ? "text" : "password"}
+                                type="text" 
                                 className="form-control input-registro" 
-                                id="password" 
-                                value={formData.password}
+                                id="name" 
+                                value={formData.name}
                                 onChange={handleChange} required
-                                
                             />
-                            <button 
-                                type="button" 
-                                className="btn-ojo" 
-                                onClick={toggleShowPassword} 
-                                style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)" }}>
-                                {showPassword ? <EyeFill size={24} /> : <EyeSlashFill size={24} />}
-                            </button>
+                            {errors.name && <span style={{ color: 'red', fontSize: '12px', fontFamily: 'Inter, sans-serif', fontWeight:'700' }}>{errors.name}</span>}
                         </div>
-                        {errors.password && <span style={{ color: 'red', fontSize: '12px', fontFamily: 'Inter, sans-serif', fontWeight:'700' }}>{errors.password}</span>}
-                    </div>
-                    <div className="col-12 mt-3">
-                        <label htmlFor="repeatPassword" className="form-label">Repite la contraseña*</label>
-                        <div className="input-group">
+                        <div className="col-12 mt-3">
+                            <label htmlFor="email" className="form-label">Email*</label>
                             <input 
-                                type={showRepeatPassword ? "text" : "password"}
-                                className="form-control" 
-                                id="repeatPassword" 
-                                value={formData.repeatPassword}
-                                onChange={handleChange} 
-                                required 
+                                type="email" 
+                                className="form-control input-registro" 
+                                id="email" 
+                                value={formData.email}
+                                onChange={handleChange} required
                             />
-                            <button 
-                                type="button" 
-                                className="btn-ojo" 
-                                onClick={toggleShowRepeatPassword}
-                                style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)" }}>
-                                {showRepeatPassword ? <EyeFill size={24} /> : <EyeSlashFill size={24} />}
-                            </button>
+                            {errors.email && <span style={{ color: 'red', fontSize: '12px', fontFamily: 'Inter, sans-serif', fontWeight:'700' }}>{errors.email}</span>}
                         </div>
-                        {errors.repeatPassword && <span style={{ color: 'red', fontFamily: 'Inter, sans-serif', fontSize: '12px', fontWeight:'700' }}>{errors.repeatPassword}</span>}
+                        <div className="col-12 mt-3">
+                            <label htmlFor="phone" className="form-label">Teléfono</label>
+                            <input type="text" className="form-control" id="phone" value={formData.phone} onChange={handleChange} />
+                        </div>
+                        <div className="col-12 mt-3">
+                            <label htmlFor="cumpleaños" className="form-label">Cumpleaños</label>
+                            <input type="date" className="form-control" id="cumpleaños" value={formData.cumpleaños} onChange={handleChange} />
+                        </div>
+                        
                     </div>
                     
+                    <div className="col-12 col-md-6 d-flex flex-column justify-content-center mb-3 mb-md-0">
+                        <div className="address d-flex flex-wrap">
+                            <div className="col-12 col-md-6">
+                                <label htmlFor="address" className="form-label">Dirección</label>
+                                <input type="text" className="form-control" id="address" value={formData.address} onChange={handleChange} />
+                            </div>
+                            <div className="col-6 col-md-3 mt-3 mt-md-0">
+                                <label htmlFor="addressNumber" className="form-label">Número</label>
+                                <input type="text" className="form-control" id="addressNumber" value={formData.addressNumber} onChange={handleChange} />
+                            </div>
+                            <div className="col-6 col-md-3 mt-3 mt-md-0">
+                                <label htmlFor="addressPortal" className="form-label">Portal</label>
+                                <input type="text" className="form-control" id="addressPortal" value={formData.addressPortal} onChange={handleChange} />
+                            </div>
+                        </div>
+                        <div className="country d-flex flex-wrap mt-3">
+                            <div className="col-12 col-md-6">
+                                <label htmlFor="ciudad" className="form-label">Ciudad</label>
+                                <input type="text" className="form-control" id="ciudad" value={formData.ciudad} onChange={handleChange} />
+                            </div>
+                            <div className="col-6 col-md-3 mt-3 mt-md-0">
+                                <label htmlFor="provincia" className="form-label">Provincia</label>
+                                <input type="text" className="form-control" id="provincia" value={formData.provincia} onChange={handleChange} />
+                            </div>
+                            <div className="col-6 col-md-3 mt-3 mt-md-0">
+                                <label htmlFor="postalCode" className="form-label">C.P</label>
+                                <input type="text" className="form-control" id="postalCode" value={formData.postalCode} onChange={handleChange} />
+                            </div>
+                        </div>
+                        <div className="col-12 mt-3">
+                            <label htmlFor="password" className="form-label">Contraseña*</label>
+                            <div className="input-group">
+                                <input 
+                                    type={showPassword ? "text" : "password"}
+                                    className="form-control input-registro" 
+                                    id="password" 
+                                    value={formData.password}
+                                    onChange={handleChange} required
+                                    
+                                />
+                                <button 
+                                    type="button" 
+                                    className="btn-ojo" 
+                                    onClick={toggleShowPassword} 
+                                    style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)" }}>
+                                    {showPassword ? <EyeFill size={24} /> : <EyeSlashFill size={24} />}
+                                </button>
+                            </div>
+                            {errors.password && <span style={{ color: 'red', fontSize: '12px', fontFamily: 'Inter, sans-serif', fontWeight:'700' }}>{errors.password}</span>}
+                        </div>
+                        <div className="col-12 mt-3">
+                            <label htmlFor="repeatPassword" className="form-label">Repite la contraseña*</label>
+                            <div className="input-group">
+                                <input 
+                                    type={showRepeatPassword ? "text" : "password"}
+                                    className="form-control" 
+                                    id="repeatPassword" 
+                                    value={formData.repeatPassword}
+                                    onChange={handleChange} 
+                                    required 
+                                />
+                                <button 
+                                    type="button" 
+                                    className="btn-ojo" 
+                                    onClick={toggleShowRepeatPassword}
+                                    style={{ position: "absolute", right: "10px", top: "50%", transform: "translateY(-50%)" }}>
+                                    {showRepeatPassword ? <EyeFill size={24} /> : <EyeSlashFill size={24} />}
+                                </button>
+                            </div>
+                            {errors.repeatPassword && <span style={{ color: 'red', fontFamily: 'Inter, sans-serif', fontSize: '12px', fontWeight:'700' }}>{errors.repeatPassword}</span>}
+                        </div>
+                        
+                        
+                    </div>
                     
                 </div>
-                
-            </div>
-            <div className="col-12 politicas justify-content-center">
+                <div className="col-12 politicas justify-content-center">
 
-                    <div className="col-12 form-check mt-4">
-                            <input className="form-check-input" type="checkbox" id="policyCheckbox" checked={policyAccepted} onChange={handleCheckboxChange} required />
-                            <label className="form-check-label" htmlFor="policyCheckbox">
-                                He leído y acepto la Política de Privacidad.
+                        <div className="col-12 form-check mt-4">
+                                <input className="form-check-input" type="checkbox" id="policyCheckbox" checked={policyAccepted} onChange={handleCheckboxChange} required />
+                                <label className="form-check-label" htmlFor="policyCheckbox">
+                                    He leído y acepto la Política de Privacidad.
+                                </label>
+                        </div>
+                            {errors.policyAccepted && <span style={{ color: 'red',fontSize: '12px', fontFamily: 'Inter, sans-serif', marginBottom:'5px', fontWeight:'700' }}>{errors.policyAccepted}</span>}  
+                        
+                        <div className="col-12 form-check mt-2">
+                            <input className="form-check-input" type="checkbox" id="comunicacionesCheckbox" value={formData.comunicacionesCheckbox} onChange={handleChange} />
+                            <label className="form-check-label" htmlFor="comunicacionesCheckbox">
+                                ¡Que no se te escape ningún Descuento! Acepto recibir comunicaciones comerciales.
                             </label>
+                        </div>
                     </div>
-                        {errors.policyAccepted && <span style={{ color: 'red',fontSize: '12px', fontFamily: 'Inter, sans-serif', marginBottom:'5px', fontWeight:'700' }}>{errors.policyAccepted}</span>}  
                     
-                    <div className="col-12 form-check mt-2">
-                        <input className="form-check-input" type="checkbox" id="comunicacionesCheckbox" value={formData.comunicacionesCheckbox} onChange={handleChange} />
-                        <label className="form-check-label" htmlFor="comunicacionesCheckbox">
-                            ¡Que no se te escape ningún Descuento! Acepto recibir comunicaciones comerciales.
-                        </label>
-                    </div>
+                <div className="col-12 d-flex justify-content-center m-auto gap-5">
+                    <PrincipalButton type="submit" buttonText="CREAR PERFIL" containerClass="m-0" className="mt-5 mb-2 btn-crear-perfil" />        
+                    <PrincipalButton type="button" buttonText="YA TENGO UNA CUENTA" containerClass="m-0" className="mt-5 mb-2 btn-inicio-sesion" onClick={handleOpenModalInicioSesion} />     
+                    {showModalInicioSesion && (
+                    <ModalInicioSesion
+                        message="TE HEMOS EXTRAÑADO"
+                        className="modal-inicio-sesion"
+                        onClose={handleCloseModalInicioSesion}
+                    />
+                )}   
                 </div>
-                
-            <div className="col-12 d-flex justify-content-center m-auto gap-5">
-                <PrincipalButton type="submit" buttonText="CREAR PERFIL" containerClass="m-0" className="mt-5 mb-2 btn-crear-perfil" />        
-                <PrincipalButton type="button" buttonText="YA TENGO UNA CUENTA" containerClass="m-0" className="mt-5 mb-2 btn-inicio-sesion" onClick={handleOpenModalInicioSesion} />     
-                {showModalInicioSesion && (
-                <ModalInicioSesion
-                    message="TE HEMOS EXTRAÑADO"
-                    className="modal-inicio-sesion"
-                    onClose={handleCloseModalInicioSesion}
+            </form>
+            {showModal && <ModalMensajeEnviado 
+                onClose={handleClose} 
+                message="GRACIAS POR REGISTRARTE, TE HEMOS ENVIADO UN EMAIL. YA PUEDES EMPEZAR TU PEDIDO" 
+                className="modal-registro-exito"
+                showCloseButton={false} />}
+            
+            <CustomAlert
+                    show={showAlert}
+                    handleClose={closeAlert}
+                    message={alertMessage}
                 />
-            )}   
-            </div>
-        </form>
-        {showModal && <ModalMensajeEnviado 
-            onClose={handleClose} 
-            message="GRACIAS POR REGISTRARTE, TE HEMOS ENVIADO UN EMAIL. YA PUEDES EMPEZAR TU PEDIDO" 
-            className="modal-registro-exito"
-            showCloseButton={false} />}
-        
-        <CustomAlert
-                show={showAlert}
-                handleClose={closeAlert}
-                message={alertMessage}
-            />
-
+        </div>
         </>
     )
 }

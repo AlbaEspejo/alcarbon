@@ -80,7 +80,7 @@ const MainContent = () =>{
                                 cada vez que vengas a nuestros restaurantes. Grandes descuentos y premios te están esperando.
                             </p>
                         </div>
-                        <PrincipalButton buttonText="UNIRME AL CLUB" onClick={handleRegistroClick} />
+                        <PrincipalButton buttonText="UNIRME AL CLUB" onClick={handleRegistroClick} className="btn-unirme-club" containerClass="div-btn-unirme"/>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,7 @@ const HorizontalMenu = () => {
         <li className={`list-inline-item ${selectedCategory === 'kids' ? 'active' : ''}`} 
             onClick={() => handleScroll('kids')}>Kids</li>
 
-        <li className={`list-inline-item ${selectedCategory === 'postres' ? 'active' : ''}`} 
+        <li className={`list-inline-item postre-menu ${selectedCategory === 'postres' ? 'active' : ''}`} 
             onClick={() => handleScroll('postres')}>Postres</li>
       </ul>
     </div>

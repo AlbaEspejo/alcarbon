@@ -117,7 +117,7 @@ const FormAndInfo = () => {
                     <PrincipalButton buttonText="UNIRME" className="btn-unirme" containerClass="no-margin" onClick={handleRegistroClick}/>
                     <PrincipalButton buttonText="INICIAR SESIÓN" className="btn-sesion" containerClass="no-margin" onClick={() => setShowModalInicioSesion(true)} />
                     {showModalInicioSesion && (
-                    <ModalInicioSesion onClose={handleCloseModalMensaje} message="TE HEMOS EXTRAÑADO" />
+                    <ModalInicioSesion onClose={handleCloseModalMensaje} message="TE HEMOS EXTRAÑADO" className="modal-inicio-sesion-principal"/>
             )}
                 </div>
             </div>

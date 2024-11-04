@@ -19,6 +19,7 @@ const ModalInicioSesion = ({ onClose, message, className,showCloseButton = true 
     const handlePasswordChange = (e) => setPassword(e.target.value);
     const navigate = useNavigate();
 
+    const [modalClass, setModalClass] = useState('');
     const [customClass, setCustomClass] = useState('');
     const [showAlert, setShowAlert] = useState(false);
     const [alertMessage, setAlertMessage] = useState('');
@@ -57,6 +58,7 @@ const ModalInicioSesion = ({ onClose, message, className,showCloseButton = true 
                 <p><strong>CONTRASEÑA:</strong> {userData.password}</p>
             </>
             );
+            setModalClass("div-modal-user-password")
             setCustomClass("alertaUserPassword")
             setShowAlert(true);
         } else {
@@ -143,6 +145,7 @@ const ModalInicioSesion = ({ onClose, message, className,showCloseButton = true 
                 handleClose={closeAlert}
                 message={alertMessage}
                 customClass={customClass}
+                modalClass={modalClass}
             />
         </>
     );

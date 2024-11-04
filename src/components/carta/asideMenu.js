@@ -18,7 +18,7 @@ import { useState } from "react"
    };
 
    return (
-     <aside className="menu">
+     <aside className="menu menu-carta-vertical">
        <ul>
          <li onClick={() => handleCategoryClick("entrantes")}
             className={selectedCategory === "entrantes" ? "selected" : ""}>

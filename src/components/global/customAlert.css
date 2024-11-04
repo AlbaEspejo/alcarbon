@@ -18,3 +18,8 @@
     font-family: "Inter", sans-serif;
     color: black !important;
 }
+@media (max-width: 520px){
+    .btn-mensaje-alerta{
+        width: 100%;
+    }
+}

@@ -162,11 +162,6 @@ body{
     .text-centered {
         font-size: 1.5rem;
     }
-    
-    .button-pedido-centered {
-        font-size: 1rem;
-        padding: 5px 10px;
-    }
     .img_intro_carta{
       height: 400px;
       margin-bottom: -90px;
@@ -202,5 +197,14 @@ body{
     }
     .food-cards{
       margin-left: 0px;
+    }
+  }
+  @media (max-width: 520px){
+    .button-pedido-centered{
+      font-size: 1rem !important;
+    }
+    
+    .menu-carta-vertical ul{
+      width: auto;
     }
   }

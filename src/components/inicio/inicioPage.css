@@ -513,6 +513,7 @@
         padding: 5px 20px; /* Ajusta el relleno para pantallas pequeñas */
         font-size: 20px;
         margin-top: -200px;
+        white-space: nowrap;
     }
 }
 @media (max-width: 768px) {
@@ -672,7 +673,26 @@
 @media (max-width: 528px) {
     .search-restaurant{
         font-size: 30px;
-
+    }
+    .btn-unirme-club{
+        width: 90% !important;
+        font-size: 20px !important;
+    }
+    .div-btn-unirme{
+        margin-top: 10px;
+    }
+    .search-restaurant{
+        text-align: center;
+    }
+    .div-search-adress .input-user-adress{
+       font-size: 12px;
+    }
+    .btn-search-adress, .btn-use-location{
+        font-size: 12px;
+    }
+    .btn-use-location{
+        padding: 5px 0px;
+        width: auto;
     }
 }
 

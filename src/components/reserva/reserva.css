@@ -196,6 +196,9 @@ hr{
     .title-reserva{
         margin-top: 15%;
     }
+    .mi-modal-reserva .modal-dialog .modal-content{
+        width: 100% !important;
+    }
 }
 @media (min-width:992px) and (max-width: 1060px){
     .div-comidas-cenas{
@@ -205,6 +208,26 @@ hr{
 }
 @media (max-width: 580px){
     .title-reserva{
-        margin-top: 15%;
+        margin-top: 17%;
+        font-size: 45px;
+    }
+}
+@media (max-width: 428px){
+    .div-comidas-cenas{
+        height: 340px;
+    }
+    .comida-reserva{
+        margin-bottom: 0px !important;
+        padding: 0px 10px !important;
+    }
+    .btn-horario{
+        margin: 5px !important;
+    }
+    .formulario-reserva{
+        padding: 0px 40px;
+        margin-top: 0px;
+    }
+    .title-reserva{
+        margin-top: 22%;
     }
 }

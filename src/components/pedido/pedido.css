@@ -11,6 +11,8 @@
   height: 60px;
   z-index: 1000;
   box-sizing: border-box;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Suaviza desplazamiento en dispositivos iOS */
 }
 
 .menu-list {
@@ -21,6 +23,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 0px;
+  white-space: nowrap;
 }
 
 .menu-list li {
@@ -556,6 +559,42 @@
 @media (max-width: 991px) {
   .horizontal-menu {
       top: 11%;
+      flex-wrap: nowrap;
+  }
+}
+@media (max-width: 520px) {
+  .horizontal-menu {
+    height: auto;
+    overflow-x: scroll;
+    padding: 10px 20px;
+  }
+
+  .menu-list {
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .menu-list li {
+    font-size: 16px;
+    margin: 0;
+  }
+  .btn-confirmar-pedido-modal{
+    width: 100%;
+  }
+  .restar-button-carrito, .sumar-button-carrito{
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+  }
+  .eliminar-item-btn{
+    padding: 0px 10px;
+  }
+  .pedido-item-title, .pedido-item-quantity, .pedido-item-price{
+    font-size: 14px;
+  }
+  .pedido-item-img{
+    width: 80px;
+    height: 60px;
   }
 }
 
@@ -569,4 +608,22 @@
   .food-category{
     justify-content: center;
   }
+}
+@media (max-width: 520px) {
+  .title-pedido-carta{
+    font-size: 40px;
+  }
+  .postre-menu{
+    padding-right: 10px;
+  }
+  .food-category{
+    gap: 25px;
+  }
+  .confirmar-cantidad-modal{
+    width: 80%;
+  }
+  .carrito-vacio{
+    font-size: 15px;
+  }
+
 }

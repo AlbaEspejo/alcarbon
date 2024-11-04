@@ -75,3 +75,20 @@ body::before {
         margin-top: 15%;
     }
 }
+@media (max-width: 520px){
+    .title-contacto{
+        font-size: 35px;
+        margin-top: 24%;
+        margin-bottom: 0px;
+    }
+    .left-div-contacto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-div-contacto .form-title{
+        margin-left: 0px !important;
+    }
+}

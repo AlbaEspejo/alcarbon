@@ -384,6 +384,42 @@
       font-size: 0.85rem;
       padding: 8px 16px;
     }
+    .container-friends{
+      margin: 80px 20px;
+    }
+    .title-friend{
+      font-size: 40px;
+      margin-top: 0px !important;
+    }
+    .btn-unirme, .btn-sesion{
+      font-size: 20px;
+    }
+    .div-modal-user-password{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: 20px;
+    }
+    .div-modal-user-password .modal-content{
+      width: 100% !important;
+      height: 160px;
+      
+    }
+    .div-modal-user-password .modal-content .alertaUserPassword{
+      padding: 20px 0px 0px 0px;
+    }
+    .div-modal-user-password .modal-content .modal-footer{
+      padding: 0px;
+    }
+    .div-modal-user-password .modal-content .alertaUserPassword .modal-footer .btn-mensaje-alerta{
+      margin-bottom: 0px;
+    }
+    .alertaUserPassword p{
+      font-size: 14px;
+    }
+    .modal-inicio-sesion .modal-dialog .modal-content{
+      width: 100%;
+    }
   }
 
   @media (min-width:769px) and (max-width: 1199px) {
